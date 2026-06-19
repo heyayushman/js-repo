@@ -36,15 +36,58 @@ let booleanIsLoggedIn = Boolean(isLoggedIn); // converting number to boolean
 // "" => false
 // "raghav" => true
 
-//? to convert number to string we can use String() function or toString() method
+// ? to convert number to string we can use String() function or toString() method
 
 let number = 33;
-console.log(number);
-console.log(typeof (number)); // number is a number
+// console.log(number);
+// console.log(typeof (number)); // number is a number
 
 //! converting number to string
-console.log("-----------------converting number to string---------------");
+// console.log("-----------------converting number to string---------------");
 let valueInString = String(number); // converting number to string
 
-console.log(valueInString);
-console.log(typeof (valueInString)); // valueInString is a string
+// console.log(valueInString);
+// console.log(typeof (valueInString)); // valueInString is a string
+
+
+// ************************************OPERATIONS********************************************//
+
+let a = "5";
+let b = 6;
+
+// console.log(a + b); // 56 (string concatenation)
+// console.log(a - b); // -1 (string is converted to number)
+// console.log(a * b); // 30 (string is converted to number)
+// console.log(a / b); // 0.8333333333333334 (string is converted to number)
+
+let value = 3
+let negValue = -value; // negating the value of a number
+// console.log(negValue); // -3
+
+// console.log(2**3); // 8 (exponentiation operator, 2 raised to the power of 3)
+// console.log(10 / 3); // 3.3333333333333335 (division operator)
+// console.log(10 % 3); // 1 (modulus operator, remainder of 10 divided by 3)
+
+let str1 = "Hello";
+let str2 = "World";
+
+// console.log(str1 + " " + str2); // Hello World (string concatenation)
+// console.log(`Length of string str1 : ${str1.length}`); // 5 (length of the string)
+// console.log(str1.toUpperCase()); // HELLO (convert to uppercase)
+// console.log(str1.toLowerCase()); // hello (convert to lowercase)
+
+// console.log("1" + 2); // 12 (string concatenation)
+// console.log("1" - 2); // -1 (string is converted to number)
+// console.log("1" + 2 + 3); // 123 (string concatenation)
+// console.log(1 + 2 + "3"); // 33 (string concatenation)
+// console.log("1" - 2 + 3); // 2 (string is converted to number)
+// console.log("1" * 2); // 2 (string is converted to number)
+// console.log("1" / 2); // 0.5 (string is converted to number)
+// console.log("1" % 2); // 1 (string is converted to number)
+
+// console.log(true + 2); // 3 (true is converted to 1)
+
+let gameCounter = 100;
+console.log(`${gameCounter} : Actual value`); // 100
+gameCounter++; // incrementing the value of gameCounter by 1
+console.log(`${gameCounter} : Value after increment`); // 101
