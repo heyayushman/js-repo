@@ -1,3 +1,11 @@
+//? Type conversion is the process of converting a value from one data type to another. In JavaScript, there are two types of type conversion: implicit and explicit.
+
+//* Implicit type conversion (type coercion) occurs when JavaScript automatically converts a value from one data type to another, based on the context in which it is used. For example, when a number is added to a string, JavaScript will convert the number to a string before performing the concatenation.
+
+//* Explicit type conversion occurs when a developer manually converts a value from one data type to another using built-in functions or methods. For example, using the Number() function to convert a string to a number, or using the String() function to convert a number to a string.
+
+//* Type conversion can be useful in certain situations, but it can also lead to unexpected results if not used carefully. It is important to understand how type conversion works in JavaScript and to use it appropriately in your code.
+
 // let score = 33;
 
 // console.log(score);
@@ -79,7 +87,7 @@ let str2 = "World";
 // console.log("1" + 2); // 12 (string concatenation)
 // console.log("1" - 2); // -1 (string is converted to number)
 // console.log("1" + 2 + 3); // 123 (string concatenation)
-// console.log(1 + 2 + "3"); // 33 (string concatenation)
+console.log(1 + 2 + "3" + 3 + 1); // 33 (1 + 2 is evaluated first to 3, then "3" is concatenated to 3, resulting in "33", and then 3 and 1 are concatenated to "33", resulting in "3331")
 // console.log("1" - 2 + 3); // 2 (string is converted to number)
 // console.log("1" * 2); // 2 (string is converted to number)
 // console.log("1" / 2); // 0.5 (string is converted to number)
@@ -91,3 +99,4 @@ let gameCounter = 100;
 console.log(`${gameCounter} : Actual value`); // 100
 gameCounter++; // incrementing the value of gameCounter by 1
 console.log(`${gameCounter} : Value after increment`); // 101
+
