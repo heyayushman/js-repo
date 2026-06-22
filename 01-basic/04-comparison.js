@@ -1,4 +1,4 @@
-// ********************************Comparison************************************************//
+//***********************Comparison**********************************//
 
 // Comparison operators are used to compare two values and return a boolean value (true or false) based on the comparison.
 

@@ -58,7 +58,7 @@ let valueInString = String(number); // converting number to string
 // console.log(typeof (valueInString)); // valueInString is a string
 
 
-// ************************************OPERATIONS********************************************//
+// **************************OPERATIONS****************************//
 
 let a = "5";
 let b = 6;

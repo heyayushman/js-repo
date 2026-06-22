@@ -32,7 +32,7 @@ let uninitializedVariable
 
 
 //! Non-primitive data types:
-//? 6. Object: This data type is used to store collections of data and more complex entities. Objects can have properties and methods. For example:
+//* 6. Object: This data type is used to store collections of data and more complex entities. Objects can have properties and methods. For example:
 
 let person = {
     name: "Alice",
@@ -43,7 +43,7 @@ let person = {
 //* 7. Symbol: This data type is used to create unique identifiers for objects. It is often used in advanced JavaScript programming. For example:
 let uniqueId = Symbol("id")
 
-//? 8. BigInt: This data type is used to represent integers that are larger than the maximum safe integer in JavaScript. For example:
+//* 8. BigInt: This data type is used to represent integers that are larger than the maximum safe integer in JavaScript. For example:
 let bigNumber = BigInt("9007199254740991")
 
 //? These are the main data types in JavaScript, and they allow us to store and manipulate different kinds of data in our programs.
