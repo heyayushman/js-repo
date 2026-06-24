@@ -172,3 +172,7 @@ let numValue = new Number(42);
 let numExponential = 123456;
 // console.log(numExponential.toExponential()); // Output: "1.23456e+5"
 // console.log(numExponential.toExponential(2)); // Output: "1.23e+5" (2 digits after the decimal point)
+
+//! Static Methods
+//? Static methods can only be used on Number:
+
