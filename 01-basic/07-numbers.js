@@ -176,3 +176,9 @@ let numExponential = 123456;
 //! Static Methods
 //? Static methods can only be used on Number:
 
+Number.isFinite()
+Number.isInteger()
+Number.isNan()
+Number.isSafeInteger()
+Number.parseInt()
+Number.parseFloat()
