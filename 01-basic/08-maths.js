@@ -131,10 +131,10 @@ let randomValue2 = Math.random() * 10; // gives a range from 0 up to 9 but exclu
 //? Example
 
 
-function getrandomInteger(max, min){
+function getRandomInteger(max, min){
     return Math.floor(Math.random() * (max - min + 1)) + min
 }
 const min = 10;
 const max = 20;
 
-console.log(getrandomInteger(max, min))
+console.log(getRandomInteger(max, min))
