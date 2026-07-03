@@ -84,9 +84,10 @@ let absoluteValue = Math.abs(number7); // This will calculate the absolute value
 // Example outputs: 0.0, 0.237, 0.9999, but never 1.
 
 let randomValue = Math.random(); // This will generate a random number between 0 (inclusive) and 1 (exclusive)
-// console.log(randomValue); //* Output: A random number between 0 and 1
+// console.log(randomValue); //* Output: A random number between 0 and 1 => 0.0 to 0.9999999999999999
 
-let randomValue2 = Math.random() * 10; // gives a range from 0 up to 9 but excluding 10. //* Example possible results: 0.0, 3.5, 9.99, etc.
+let randomValue2 = Math.random() * 10; // gives a range from 0 up to 9 but excluding 10. 
+//* Example possible results: 0.0, 3.5, 9.99, etc.
 
 // console.log(randomValue2)
 
@@ -101,6 +102,7 @@ let randomValue2 = Math.random() * 10; // gives a range from 0 up to 9 but exclu
 
 // Return a random integer from 0 to 10 (both included):
 //? Math.floor(Math.random() * 11);
+// console.log(Math.floor(Math.random() * 11));
 
 // Return a random integer from 0 to 99 (both included):
 //? Math.floor(Math.random() * 100);
@@ -121,7 +123,7 @@ let randomValue2 = Math.random() * 10; // gives a range from 0 up to 9 but exclu
 
 // Return a random integer between 1 and 10 (both included):
 //? Math.floor(Math.random() * 10) + 1;
-
+// console.log(Math.floor(Math.random() * 10) + 1);
 
 //! A Proper Random Function
 //* This JavaScript function always returns a random integer between min and max (both included):
