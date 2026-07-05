@@ -1,1 +1,0 @@
-//* methods are the functions that are associated with objects. In JavaScript, methods are actions that can be performed on objects. Methods are stored in properties as function definitions.
