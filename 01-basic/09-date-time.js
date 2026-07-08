@@ -47,5 +47,11 @@ let years = days / 365; //* Returns the years of the created date
 
 let newDate = new Date();
 
-console.log(newDate.getMonth()); //* Returns the current month (0-11) - 4 (May)
-console.log(newDate.getDate());
+// console.log(newDate.getMonth()); //* Returns the current month (0-11) - 4 (May)
+// console.log(newDate.getDate());
+
+let longWeekDay = newDate.toLocaleString("default", { 
+    weekday: "long" 
+}); 
+//* Returns the current day of the week in a human-readable format - Thursday
+console.log(longWeekDay);
