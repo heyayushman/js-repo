@@ -11,8 +11,13 @@ const user = {
   age: 30,
   email: "example@mail.com",
 };
-let text = JSON.stringify(user)
-console.log(text)
+
+//* An intrinsic object that provides functions to convert JavaScript values to and from the JavaScript Object Notation (JSON) format.
+
+// let text = JSON.stringify(user)
+// console.log(text)
+
+
 // console.log(user); //* { name: 'John Doe', age: 30, email: '}
 
 user.address = "123 Main St"; //* Adding a new property to the object
@@ -110,3 +115,29 @@ person3.name = function () {
 };
 
 // console.log(person3.name())
+
+
+//? Hitesh Chaudhary
+
+
+//* defining a symbol
+const mySym = Symbol("key10");
+
+let myPersonalObject = {
+    name : "Noorain",
+    [mySym]: "my_key1",
+    age : 19,
+    "fullName" : "Noorain Fatima"
+}
+
+// console.log(myPersonalObject["fullName"])
+// //* printing symbol
+// console.log(myPersonalObject[mySym])
+
+
+//? we can freeze the objects which we don't want to change
+Object.freeze(myPersonalObject);
+
+myPersonalObject.age = 25;
+console.log(myPersonalObject) //* age = 26 (value does not change)
+
