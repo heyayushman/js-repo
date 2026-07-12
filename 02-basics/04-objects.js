@@ -49,9 +49,43 @@ const users = [
     }
 ]
 
-console.log(instagramUser)
-console.log(Object.keys(instagramUser))
-console.log(Object.values(instagramUser))
-console.log(Object.entries(instagramUser))
+// console.log(instagramUser)
+// console.log(Object.keys(instagramUser))
+// console.log(Object.values(instagramUser))
+// console.log(Object.entries(instagramUser))
 
-console.log(instagramUser.hasOwnProperty('isLogged'))
+// console.log(instagramUser.hasOwnProperty('isLogged'))
+
+
+
+//! Object de-structure and JSON API introduction
+
+const course = {
+    courseName : "JSCourse",
+    price: "999",
+    courseInstructor: "Ayushman",
+    platform : {
+        youtube : {
+            channelName : "tech_unfiltered"
+        }
+
+
+    }
+}
+
+
+// course.courseInstructor
+//* create an curly bracket {} and mention the key <-courseName-> ==> {courseName}, and the object from which to get the values <-course->
+
+// const {courseName, price, courseInstructor} = course
+// console.log(courseName, price, courseInstructor)
+
+const {price: coursePrice} = course
+console.log(coursePrice)
+
+const {courseInstructor: instructor} = course
+console.log(instructor)
+
+const {platform : {youtube: {channelName}}} = course
+console.log(channelName)
+
