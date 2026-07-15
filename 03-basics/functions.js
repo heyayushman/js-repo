@@ -48,14 +48,14 @@ function logInUserMessage(userName = "John Doe"){
 
     }
 }
-// console.log(logInUserMessage())
+// console.log(logInUserMessage());
 
-
+//rest operator ...
 function calculateCartPrice(...num1){
     return num1;
 }
 
-// console.log(calculateCartPrice(10, 200, 300))
+console.log(calculateCartPrice(10, 200, 300));
 
 
 const user = {
@@ -67,7 +67,7 @@ function handleObject(anyObject){
     console.log(`User name is ${anyObject.username} and price is ${anyObject.price}.`);
 }
 
-// handleObject(user)
+// handleObject(user);   
 
 handleObject({
     username: "Sushi",
@@ -81,5 +81,5 @@ function getArray(getValue){
     return getValue[1];
 }
 
-console.log(getArray(myArray))
+console.log(getArray(myArray));
 // console.log(getArray([200, 500, 400, 100])
