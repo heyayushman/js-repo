@@ -13,3 +13,6 @@ console.log("Sum : ", hello);
 ((name) => {
   console.log(`Recipe is amazing! and thank you ${name}.`)
 })("Chef");
+
+
+//iife is very useful when we need to call a function directly without calling it
