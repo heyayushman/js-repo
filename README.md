@@ -31,3 +31,19 @@ function myFunction() {
    y = 3.14;   // This will also cause an error because y is not declared
 }
 ```
+
+
+## Call Stack
+![alt text](image.png)
+
+Step 1: Global Execution 
+Step 2: Memory Execution : The variable will be undefined first, the functions definition will also be stored, in this phase the memory has been created
+Step 3: Execution Phase : The undefined variable will be assigned values to each variable,
+
+Whenever the functions are executed, a new variable environment will be created, and execution thread
+
+![alt text](image-1.png)
+![alt text](image-2.png)
+
+## After completing the task the execution context gets deleted
+![alt text](image-3.png)
