@@ -83,3 +83,20 @@ function getArray(getValue){
 
 console.log(getArray(myArray));
 // console.log(getArray([200, 500, 400, 100])
+
+//? fahrenheit to celsius
+// let c, f;
+// function fahToCel(f){
+//     return c = (f - 32) * 5/9;
+    
+// }
+
+// console.log("Temperature in celsius", fahToCel(50));
+
+//? celsius to fahrenheit
+
+// function celToFah(c){
+//     return f = (c * 9/5) + 32
+// }
+
+// console.log("Temperature in fahrenheit", celToFah(45));
