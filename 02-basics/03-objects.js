@@ -37,7 +37,7 @@ const Person = {};
 
 Person.name = "Jane Doe";
 Person.age = 25;
-Person.email = "ex@mail.co.in";
+Person.email = "hello@gmail.com";
 
 // console.log(Person); //* { name: 'Jane Doe', age: 25, email: '}
 
@@ -70,11 +70,11 @@ const myObject = {
     }
 }
 
-// console.log(myObject.name);
-// console.log(myObject.age);
-// console.log(myObject.myCars.car1);
-// delete myObject.age;
-// console.log(myObject.age);
+console.log(myObject.name);
+console.log(myObject.age);
+console.log(myObject.myCars.car1);
+delete myObject.age;
+console.log(myObject.age);
 
 //? You can access nested objects using the dot notation or the bracket notation:
 

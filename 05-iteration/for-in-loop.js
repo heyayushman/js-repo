@@ -38,13 +38,13 @@ const person = {
 // for(const key of personKeys){
 //     console.log(key,": " , person[key]);
 // }
-// const map = new Map();
-// map.set('IN', "India");
-// map.set('USA', "United States Of America");
-// map.set('JPN', "Japan");
-// map.set('FR', "France");
-// map.set('JPN', "Japan");
+const map = new Map();
+map.set('IN', "India");
+map.set('USA', "United States Of America");
+map.set('JPN', "Japan");
+map.set('FR', "France");
+map.set('JPN', "Japan");
 
-// for(const key in map){
-//     console.log(key);
-// }
+for(const [key, value] of map){
+    console.log(key, value);
+}
