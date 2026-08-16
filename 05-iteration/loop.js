@@ -50,10 +50,10 @@ Inner loop value 3 and outer loop 3
 //     }
 // }
 
-let myArr = ["Thor", "Hulk", "Iron Man", "Spider Man", "Wonder"];
-for(let i = 0; i < myArr.length; i++){
-     console.log(myArr[i]);
-}
+// let myArr = ["Thor", "Hulk", "Iron Man", "Spider Man", "Wonder"];
+// for(let i = 0; i < myArr.length; i++){
+//      console.log(myArr[i]);
+// }
 
 //? pattern
 /* for(let i = 0; i < 10; i++){
@@ -64,3 +64,22 @@ for(let i = 0; i < myArr.length; i++){
     console.log(row);
 }
 */
+
+
+//break keyword: breaks the flow of execution
+// for(let i = 0; i<=10; i++){
+//     if(i == 5){
+//         console.log("Detected: ", i);
+//         break;
+//     }
+//     console.log("Value of i is: ", i);
+// }
+
+// continue keyword: skips the mentioned value
+for(let i = 1; i<=10; i++){
+    if(i == 5){
+        console.log("Skipped: ", i);
+        continue;
+    }
+    console.log("Value of i is: ", i);
+}

@@ -59,6 +59,7 @@ const entries = Object.entries(user);
 // console.log(entries)
 
 //! Deleting Properties
+
 //* The delete keyword deletes a property from an object:
 const myObject = {
     name : "Leo",
@@ -124,10 +125,10 @@ person3.name = function () {
 const mySym = Symbol("key10");
 
 let myPersonalObject = {
-    name : "Noorain",
+    name : "Peter",
     [mySym]: "my_key1",
     age : 19,
-    "fullName" : "Noorain Fatima"
+    "fullName" : "Peter Parker"
 }
 
 // console.log(myPersonalObject["fullName"])
