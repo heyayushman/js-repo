@@ -36,6 +36,11 @@ const person = {
 
 // console.log(personEntries);
 // for(const key of personKeys){
+
+//* The map() method creates a new array by performing a function on each array element.
+//* The map() method does not execute the function for array elements without values.
+//* The map() method does not change the original array.
+
 //     console.log(key,": " , person[key]);
 // }
 const map = new Map();
@@ -45,6 +50,35 @@ map.set('JPN', "Japan");
 map.set('FR', "France");
 map.set('JPN', "Japan");
 
-for(const [key, value] of map){
-    console.log(key, value);
-}
+// for(const [key, value] of map){
+//     console.log(key, value);
+// }
+
+
+const myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const newNum = myNum.map((item) => {
+  return item * 2;
+}).map((item) => item + 10).filter((item) => item > 15);
+
+// console.log(newNum);
+
+
+//chaining
+
+const newNum2 = myNum
+                      .map((item) => item * 2)
+                      .filter((item) => item > 10);
+// console.log(newNum2);
+
+//! reduce() method:
+//* The reduce() method executes a reducer function (that you provide) on each element of the array which produces a single value.
+//* The reduce() method does not execute the function for empty array elements.
+//* The reduce() method does not change the original array.
+
+const numbers = [16, 45, 9, 4, 25];
+
+let initialValue = 0;
+let sum = numbers.reduce((accumulator, currentValue, array) => {
+  return accumulator + currentValue;
+}, initialValue);
+console.log(sum);

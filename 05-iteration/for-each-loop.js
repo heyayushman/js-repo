@@ -53,7 +53,9 @@ const books = [
 
   // const userBooks = books.filter((bk) => bk.publish > 2000);
 
-  const userBooks = books.filter((bk) => { return bk.edition > 2010});
+  const userBooks = books.filter((bk) => { 
+    return bk.edition > 2010 && bk.genre === "Science"
+  });
   console.log(userBooks);
 
 const lang = myArr.forEach((item) => {
