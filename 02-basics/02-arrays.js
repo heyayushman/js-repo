@@ -19,7 +19,7 @@ const newArray = [1, 2, 3, [4, 5, 6], 7, [8, 9, [4, 5]]];
 
 const flatArray = newArray.flat(2); //* Using the flat() method to flatten the array to a depth of 2. Depth is the number of levels of nesting to flatten. The default is 1, which means it will only flatten one level of nested arrays. If you want to flatten all levels of nested arrays, you can use Infinity as the depth value.
 
-// console.log(flatArray); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 4, 5]
+console.log(flatArray); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 4, 5]
 
 const array = "Hello"
 

@@ -17,12 +17,10 @@ const user = {
 // let text = JSON.stringify(user)
 // console.log(text)
 
-
 // console.log(user); //* { name: 'John Doe', age: 30, email: '}
 
 user.address = "123 Main St"; //* Adding a new property to the object
 // console.log(user); //* { name: 'John Doe', age: 30, email: '}
-
 
 //!Object Properties
 //? Object Properties can be accessed in two different ways
@@ -41,19 +39,18 @@ Person.email = "hello@gmail.com";
 
 // console.log(Person); //* { name: 'Jane Doe', age: 25, email: '}
 
-
 //* Object.keys() : This method returns an array of the object's own enumerable property names (keys). For example:
 
 const keys = Object.keys(user);
 // console.log(keys); //* [ 'name', 'age', 'email', 'address' ]
 
-//* Object.values() : This method returns an array of the object's own enumerable property values. 
+//* Object.values() : This method returns an array of the object's own enumerable property values.
 //* For example:
 
 const values = Object.values(user);
 // console.log(values); //* [ 'John Doe', 30, 'example@mail.com', '123 Main St' ]
 
-//* Object.entries() : This method returns an array of the object's own enumerable property [key, value] pairs. 
+//* Object.entries() : This method returns an array of the object's own enumerable property [key, value] pairs.
 //* For example:
 const entries = Object.entries(user);
 // console.log(entries)
@@ -62,14 +59,14 @@ const entries = Object.entries(user);
 
 //* The delete keyword deletes a property from an object:
 const myObject = {
-    name : "Leo",
-    age : 28,
-    myCars : {
-        car1 : "Ford",
-        car2 : "BMW",
-        car3 : "Toyota"
-    }
-}
+  name: "Leo",
+  age: 28,
+  myCars: {
+    car1: "Ford",
+    car2: "BMW",
+    car3: "Toyota",
+  },
+};
 
 console.log(myObject.name);
 console.log(myObject.age);
@@ -79,24 +76,24 @@ console.log(myObject.age);
 
 //? You can access nested objects using the dot notation or the bracket notation:
 
-let p1 = "myCars"
-let p2 = "car2"
+let p1 = "myCars";
+let p2 = "car2";
 // console.log(myObject[p1][p2])
 //! JavaScript Object Methods
 //* Objects can also have methods. Object methods are actions that can be performed on objects. Object methods are function definitions stored as property values:
 
 const person2 = {
-    firstName : "Brendan",
-    lastName : "Eich",
-    age : 26,
-    fullName : function() {
-        return (this.firstName + " " + this.lastName).toUpperCase();
-    }  //* In an object method, this refers to the object.
+  firstName: "Brendan",
+  lastName: "Eich",
+  age: 26,
+  fullName: function () {
+    return (this.firstName + " " + this.lastName).toUpperCase();
+  }, //* In an object method, this refers to the object.
 };
 //? The this Keyword
 //* In an object method, this refers to the object.
 
-let fullName = person2.fullName()
+let fullName = person2.fullName();
 // console.log(fullName)
 
 //* In the example above, this refers to the person object.
@@ -106,39 +103,34 @@ let fullName = person2.fullName()
 //? You can add methods to objects by assigning a function to a property
 
 let person3 = {
-    firstName3 : "Cherie",
-    lastName3 : "Lewis"
-}
+  firstName3: "Cherie",
+  lastName3: "Lewis",
+};
 person3.name = function () {
-    
-  return (this.firstName3 + " " + this.lastName3).toUpperCase(); 
+  return (this.firstName3 + " " + this.lastName3).toUpperCase();
   //* This example uses the JavaScript toUpperCase() method to convert a text to uppercase:
 };
 
 // console.log(person3.name())
 
-
 //? Hitesh Chaudhary
-
 
 //* defining a symbol
 const mySym = Symbol("key10");
 
 let myPersonalObject = {
-    name : "Peter",
-    [mySym]: "my_key1",
-    age : 19,
-    "fullName" : "Peter Parker"
-}
+  name: "Peter",
+  [mySym]: "my_key1",
+  age: 19,
+  fullName: "Peter Parker",
+};
 
 // console.log(myPersonalObject["fullName"])
 // //* printing symbol
 // console.log(myPersonalObject[mySym])
 
-
 //? we can freeze the objects which we don't want to change
 Object.freeze(myPersonalObject);
 
 myPersonalObject.age = 25;
-console.log(myPersonalObject) //* age = 26 (value does not change)
-
+console.log(myPersonalObject); //* age = 26 (value does not change)

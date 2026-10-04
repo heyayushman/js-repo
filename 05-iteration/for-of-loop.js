@@ -6,9 +6,9 @@
 
 const myArr = [1, 2, 3, 4, 5];
 
-for (const x of myArr) {
-    // console.log(x);
-}
+// for (const x of myArr) {
+//     console.log(x);
+// }
 
 // let myArr2 = ["Mon", "Tue", "Wed"];
 // for (const val of myArr2) {
@@ -100,14 +100,14 @@ map.set('JPN', "Japan");
 
 // console.log(map);
 
-// for(const key of map){
-//     console.log(key);
-// }
+for(const key of map){
+    console.log(key);
+}
 
 //? To get key and value pair, square bracket can be used
-// for(const [key, value] of map){
-//     console.log(key,': ', value);
-// }
+for(const [key, value] of map){
+    console.log(key,': ', value);
+}
 
 const myObj = {
     name: "Vik",
