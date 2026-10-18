@@ -15,13 +15,13 @@ const myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // })
 
 
-// const newNum = [];
-// myNum.forEach((item) => {
-//   if(item > 4) {
-//     newNum.push(item);
-//   }
-// })
-// console.log(newNum);
+const newNum = [];
+myNum.forEach((item) => {
+  if(item > 4) {
+    newNum.push(item);
+  }
+})
+console.log(newNum);
 
 
 // const ages = [32, 33, 16, 40];

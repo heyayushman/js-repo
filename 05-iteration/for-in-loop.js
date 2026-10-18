@@ -63,7 +63,10 @@ const newNum = myNum.map((item) => {
 // console.log(newNum);
 
 
-//chaining
+//? chaining
+
+const newNum1 = myNum.map((item) => item * 10).map((item) => item + 1).filter((item) => item > 20);
+// console.log(newNum1)
 
 const newNum2 = myNum
                       .map((item) => item * 2)
