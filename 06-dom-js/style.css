@@ -1,0 +1,28 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+.weekDay {
+    padding: 15px;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weekDay:hover {
+    color: brown;
+}
+
+.main .day {
+    color: #454444;
+    font-size: 25px;
+
+}
+.main .day:hover {
+    color: white;
+
+}
+
