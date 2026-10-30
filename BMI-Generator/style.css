@@ -20,7 +20,7 @@ input::placeholder {
   opacity: 1;
 }
 
-#result {
+#result, .remarks {
   /* flex: 1; */
   min-width: 250px;
   max-width: 800px;
@@ -30,6 +30,7 @@ input::placeholder {
   margin-inline: 12px;
   padding-inline: 12px;
   border: 2px solid black;
+  margin: 10px;
 }
 
 .heading, .height-container,
