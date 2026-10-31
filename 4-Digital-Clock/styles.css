@@ -15,6 +15,6 @@
 .clock-time {
   font-size: 7.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   text-shadow: 0 0 20px rgba(10, 175, 230,  1),  0 0 20px rgba(10, 175, 230, 1);
+   text-shadow: 0 0 20px rgb(0 0 0), 0 0 20px rgb(0 0 0);
    color: #daf6ff; /* almost cyan colored*/
 }
