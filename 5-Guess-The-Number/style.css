@@ -1,0 +1,17 @@
+.container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-heading {
+    font-size: 2.5rem;
+}
+.prev{
+    margin-top: 20px;
+}
+.remaining-guess, .previous-guess{
+    display: inline;
+    /* font-size: 20px; */
+}
